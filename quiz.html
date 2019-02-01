@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Quackshack</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script src="js/Quiz.js"></script>
+</head>
+<body>
+  <header>
+    <h1> Quackshack</h1>
+    <ul>
+      <li><a href = "index.html"> Home</a></li>
+      <li><a href = "actionmovies.html"> Action Movies</a></li>
+      <li><a href = "comedy.html">  Comedy</a></li>
+      <li><a href = "drama.html">  Drama</a></li>
+      <li><a href = "horror.html">  Horror</a></li>
+      <li><a href = "quiz.html">  Interactive Quiz</a></li>
+      <li><a href = "aboutus.html">  About Us</a></li>
+    </ul>
+    <img class="menuToggle" src="images/popthatcorn.png">
+  </header>
+  <div class="spacer">
+      &nbsp;
+  </div>
+    <h2>See how well you know the top movies of 2017!</h2>
+    <h3><b>Rules! No more looking at the the lists provided on this website, no google, and have fun!</b></h3>
+    <div id="quizQs"></div>
+        <form name="quizForm" onsubmit="return submitAnswers()">
+            <fieldset>
+                <legend>Question 1: Which movie tops both the Comedy and Action charts of 2017?</legend>
+                <input type="radio" name="response" value="a"/> It<br>
+                <input type="radio" name="response" value="b"/> Kingsman<br>
+                <input type="radio" name="response" value="c"/> Thor:Ragnarok<br>
+                <input type="radio" name="response" value="d"/> The Hangover<br>
+           
+
+                <legend>Question 2: Which actor plays Thor?</legend>
+                <input type="radio" name="response2" value="a"/> Matt Damon<br>
+                <input type="radio" name="response2" value="b"/> Liam Hemsworth<br>
+                <input type="radio" name="response2" value="c"/> Chris Hemsworth<br>
+                <input type="radio" name="response2" value="d"/> Danny Devito<br>
+            
+            <legend>Question 3: Which of the following is the summary of the movie It?</legend>
+            <input type="radio" name="response3" value="a"/> Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous-looking snowman.<br>
+            <input type="radio" name="response3" value="b"/> A group of bullied kids band together when a shapeshifting demon, taking the appearance of a clown, begins hunting children.<br>
+            <input type="radio" name="response3" value="c"/> Imprisoned, the mighty Thor finds himself in a lethal gladiatorial contest against the Hulk, his former ally. Thor must fight for survival and race againsttime to prevent the all-powerful Hela from destroying his home and the Asgardian civilization.<br>
+            <input type="radio" name="response3" value="d"/> Peter Parker balances his life as an ordinary high school student in Queens with his
+                    superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling
+                    the skies of New York City.<br>
+
+                <legend>Question 4: Was It originally a book, if so, who is the author?</legend>
+                <input type="radio" name="response4" value="a"/> Yes!The author is J.K. Rowling<br>
+                <input type="radio" name="response4" value="b"/> Of course it isn't!<br>
+                <input type="radio" name="response4" value="c"/> It definitely is, and the author is Stephen King<br>
+                <input type="radio" name="response4" value="d"/> I only watch the movies so I wouldn't know<br>
+            </fieldset>
+            <input type="submit" value="Submit Answers">
+        </form><br><br>
+        
+
+        <form id="favMoviePoll">
+            <fieldset>
+                <legend>Poll: What was your favorite movie</legend>
+
+                <input type="radio" name="favorite" value="thor" /> Thor:Ragnarok <br>
+                <input type="radio" name="favorite" value="kingsman"/> Kingsman<br>
+                <input type="radio" name="favorite" value="it"/> It<br>
+                <input type="radio" name="favorite" value="wonder"/> Professor Marston and the Wonder Women<br>
+                <input type="radio" name="favorite" value="geostorm"/> Geostorm<br>
+                <input type="radio" name="favorite" value="text_toggle" id="doubleInput"><input type="text" name="favorite" placeholder=" Other..."/><br><br>
+                <input type="button" class="btn btn-success" value="Finish Quiz">
+            </fieldset>
+        </form>
+        <br><br>
+
+
+</body>
+</html>
